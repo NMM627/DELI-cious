@@ -10,6 +10,16 @@ public class Sandwich {
     private List<Toppings> toppingsList;
     private boolean isToasted;
 
+    public int getSandwichSize() {
+        return sandwichSize;
+    }
+
+    public void setSandwichSize(int sandwichSize) {
+        this.sandwichSize = sandwichSize;
+    }
+
+    private int sandwichSize;
+
     public Sandwich(String name, String breadType, List<Toppings> toppingsList, boolean isToasted) {
         this.name = name;
         this.breadType = breadType;
@@ -42,8 +52,13 @@ public class Sandwich {
         isToasted = toasted;
     }
 
+    public void addTopping(Toppings topping) {
+        toppingsList.add(topping);
+    }
+
     public double calculatePrice(){
         // calculate price of sandwich based on the toppings
+        return 0;
     }
 
 }

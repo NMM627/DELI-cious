@@ -10,4 +10,12 @@ public class Chips {
     public double calculatePrice() {
         return 1.50;
     }
+
+    public String getChipType() {
+        return chipType;
+    }
+
+    public void setChipType(String chipType) {
+        this.chipType = chipType;
+    }
 }

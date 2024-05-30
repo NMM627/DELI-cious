@@ -9,6 +9,22 @@ public class Drink {
         this.flavor = flavor;
     }
 
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
+
+    public String getFlavor() {
+        return flavor;
+    }
+
+    public void setFlavor(String flavor) {
+        this.flavor = flavor;
+    }
+
     public double calculatePrice() {
         if (size == 1) {
             return 2.00;
@@ -20,6 +36,7 @@ public class Drink {
             return 3.00;
         }
         return 0;
+
     }
 
 
