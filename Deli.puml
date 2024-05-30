@@ -1,0 +1,61 @@
+@startuml
+
+class Sandwich {
+    - String name
+    - String breadType
+    - List <Toppings> toppings
+    - boolean is toasted
+    + calculatePrice()
+}
+
+class Chips {
++ calculatePrice()
+}
+
+class Drink {
++setSize()
++calculatePrice()
+}
+
+abstract class Toppings {
+-String name
+-double price
++boolean is extra()
+-get price
+
+}
+class Premium extends Toppings {
+}
+class Regular extends Toppings {
+}
+class Meats extends Premium {
+sandwich size
+}
+class Cheeses extends Premium {
+}
+class Sauces {
+-String name
+}
+class Sides {
+-String name
+}
+class Homescreen {
++Display()
+}
+class Order {
+-String name
++double getPrice()
++setSize()
+}
+class Receipt {
++create receipt(receipt)
+}
+class Customer {
+-String name
+}
+
+
+
+
+
+@enduml
